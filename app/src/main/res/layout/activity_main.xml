@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<!--******************메인 화면 구성***********************-->
+    <LinearLayout
+        android:id="@+id/startScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#472F23"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="178dp"
+                android:layout_height="148dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                tools:src="@drawable/coffeicon" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="359dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:src="@drawable/quaote"
+                tools:src="@drawable/quaote" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/recommendBtn"
+                android:layout_width="170dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="25dp"
+                android:backgroundTint="#C08C59"
+                android:onClick="onClick"
+                android:text="Recommend"
+                android:textColor="#472F23"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/listBtn"
+                android:layout_width="170dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#C08C59"
+                android:onClick="onClick"
+                android:text="List of Coffees"
+                android:textColor="#472F23"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+<!--******************추천 화면 구성***********************-->
+    <LinearLayout
+        android:id="@+id/recommendScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#472F23"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#B33232"
+            android:shape="oval"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+<!--******************전체 리스트 화면 구성***********************-->
+    <LinearLayout
+        android:id="@+id/listScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#472F23"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+<!--******************지도 화면 구성***********************-->
+    <LinearLayout
+        android:id="@+id/mapScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#472F23"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
